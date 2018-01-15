@@ -1,0 +1,198 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	color: $text-color
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+a
+	color: $text-color
+	&:hover
+		color: $green
+
+header
+	padding-top: 20px
+	margin-bottom: 15px
+
+.blue-head-holder
+	background-color: $section-title-bg
+	h2
+		font-size: 30px
+		font-weight: 400
+		text-transform: uppercase
+		line-height: 1em
+		margin: 15px 0
+		padding-right: 20px
+		position: relative
+		&:after
+			content: "\e904"
+			font: normal normal normal 25px/1 Icons
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+			text-rendering: auto
+			-webkit-font-smoothing: antialiased
+			-moz-osx-font-smoothing: grayscale
+	&:hover
+		background-color: $text-color
+		a
+			color: $head-hover
+			
+			&:hover
+				text-decoration: none
+				color: $head-hover
+	
+.logo
+	float: left
+.social
+	float: right
+	padding-top: 32px
+	.ic
+		font-size: 19px
+nav
+	ul
+		list-style: none
+		padding: 0
+		margin: 0
+	a
+		&:hover
+			text-decoration: none
+	li
+		float: left
+		margin-right: 18px
+		font-size: 18px
+		&:last-child
+			margin-right: 0
+.navigation-menu
+	float: left
+
+
+
+.right-navigation
+	float: right
+
+
+.has-sub
+	padding-right: 9px
+	position: relative
+	ul
+		position: absolute
+		max-height: 0
+		z-index: 99
+		overflow: hidden
+		transition: max-height 1s
+		li
+			margin-right: 0
+	&:hover
+		ul
+			max-height: 1000px
+	&:after
+		content: "\e900"
+		display: inline-block
+		font: normal normal normal 14px/1 Icons
+		font-size: 0.5em
+		position: absolute
+		right: -0.3em
+		bottom: 1em
+		text-rendering: auto
+		-webkit-font-smoothing: antialiased
+		-moz-osx-font-smoothing: grayscale
+
+
+
+
+// icon pack
+
+.ic
+	display: inline-block
+	font: normal normal normal 14px/1 Icons
+	font-size: inherit
+	text-rendering: auto
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.ic-fb:before
+	content: "\e96d"
+.ic-inst:before
+	content: "\e96e"
+.ic-viber:before
+	content: "\e96c"
+.ic-arr-down:before
+	content: "\e900"
+
+
+// slider
+
+.slider
+	img
+		max-width: 100%
+		display: block
+
+.slide
+	position: relative
+	.slide-text
+		position: absolute
+		z-index: 100
+		padding: 15px 30px
+		left: 0
+		top: 50%
+		line-height: 50px
+		font-weight: 200
+		font-size: 50px
+
+
+.vacancy-pic-box
+	width: 100%
+	padding-top: 100%
+	position: relative
+	border: 2px solid $text-color
+	div
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		text-align: center
+
+
+
+
+@import "media" // Всегда в конце
