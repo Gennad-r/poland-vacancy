@@ -51,6 +51,11 @@ a
 		outline: none
 		text-decoration: none
 		color: inherit
+.text-right
+	text-align: right
+
+.top-margin
+	margin-top: 30px
 
 header
 	padding-top: 20px
@@ -152,7 +157,7 @@ nav
 	display: inline-block
 	text-align: center
 	font-size: 25px
-	padding: 10px 0 7px
+	padding: 10px 30px 7px
 	border: 2px solid $text-color
 	transition: all 0.3s
 	&:focus
@@ -289,5 +294,24 @@ nav
 		max-height: 0
 		overflow: hidden
 		transition: max-height 0.2s
+
+.helpfull-info
+.info-tiles
+	display: block
+	filter: opacity(0.5)
+	transition: filter 0.5s
+	&:hover
+		filter: opacity(1)
+		text-decoration: none
+		color: inherit
+	h4
+		font-size: 16px
+		text-transform: uppercase
+		font-weight: 400
+		margin-top: 15px
+		line-height: 1.2em
+
+
+
 
 @import "media" // Всегда в конце
