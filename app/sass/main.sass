@@ -57,6 +57,23 @@ a
 .top-margin
 	margin-top: 30px
 
+
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+	background-color: $text-color
+	height: 3px
+.hamburger
+	transition: padding-top .3s
+	padding: 7px 10px 0 0
+	padding-bottom: 0px
+	z-index: 6
+	position: absolute
+	right: 10px
+	display: none
+	&:hover
+		opacity: 1
+	
+
+
 header
 	padding-top: 20px
 	margin-bottom: 15px
@@ -93,8 +110,25 @@ header
 	
 .logo
 	float: left
+	overflow: hidden
 	img
-		max-width: 100%
+		display: block
+		float: left
+		width: 50px
+		text-align: center
+	h1
+		display: block
+		float: left
+		text-align: center
+		margin: 2px 0 0 5px
+		line-height: 50px
+		text-transform: uppercase
+		font-weight: 500
+	a
+		&:hover
+			color: inherit
+	div
+		color: $head-hover
 .social
 	float: right
 	padding-top: 32px
@@ -310,8 +344,34 @@ nav
 		font-weight: 400
 		margin-top: 15px
 		line-height: 1.2em
+	img
+		margin: 0 auto
 
+footer
+	background-color: $text-color
+	color: darken($head-hover, 20%)
+	padding-top: 15px
+	.logo
+		float: none
+		padding-bottom: 15px
+		img
+			float: left
+			width: 35px
 
-
+		div
+			float: left
+			text-transform: uppercase
+			margin: 0 0 0 7px
+			font-weight: 500
+			font-size: 18px
+			line-height: 35px
+	hr
+		border-top: 1px solid darken($head-hover, 30%)
+		margin: 5px 0
+	p
+		font-weight: 200
+	
+	.col-md-12 p
+		margin: 5px 0
 
 @import "media" // Всегда в конце

@@ -14,17 +14,53 @@
 	.slide
 		.slide-text
 			top: 15%
-			font-size: 30px
+			font-size: 24px
 			font-weight: 400
 	.social, .right-navigation, .navigation-menu
 		display: none
-	.logo
-		width: 380px
-
+	.navigation-menu
+		float: none
+	.right-navigation
+		float: none
+		padding: 30px 0 15px
+	header
+		.logo
+			h1
+				display: none
+	.accordion-head
+		font-size: 24px
+	.slide
+		.slide-text
+			padding: 15px 0
+	.info-tiles
+		h4
+			text-align: center
+	nav
+		li
+			float: none
+			font-size: 20px
+			margin-right: 0
+			&:first-child
+				margin-bottom: 15px
+	.clicked
+		position: absolute
+		margin: 0 -15px
+		padding: 30px 15px 0
+		z-index: 999
+		width: 100%
+		background-color: #FFF
+		border-bottom: 2px solid #ddd
+		.right-navigation, .navigation-menu
+			display: block
+	.hamburger
+		display: block
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
-
+	.blue-head-holder
+		h2
+			font-size: 24px
+			font-weight: 500
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)

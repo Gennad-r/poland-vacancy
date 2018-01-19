@@ -37,12 +37,20 @@ $(function() {
 			}
 		});
 	});
+
+	// hamburger menu
+	$('.hamburger--elastic').click(function () {
+			$(this).toggleClass("is-active");
+			$("nav").toggleClass("clicked");
+	});
+
+
 	//scroll to
 	$('.navigation-menu a').bind('click', function(e) {
 		e.preventDefault(); // prevent hard jump, the default behavior
 		// for mobile and hamburger menu
-		//$(".hamburger--elastic").removeClass("is-active");
-		//$(".menu").removeClass("clicked");
+		$(".hamburger--elastic").removeClass("is-active");
+		$("nav").removeClass("clicked");
 		var target = $(this).attr("href") || $(this).attr("data"), // Set the target as variable
 			pos = $(target).offset().top; // navigation panel heigth
 		// perform animated scrolling by getting top-position of target-element and set it as scroll target
