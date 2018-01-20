@@ -127,8 +127,7 @@ header
 	a
 		&:hover
 			color: inherit
-	div
-		color: $head-hover
+	
 .social
 	float: right
 	padding-top: 32px
@@ -347,9 +346,13 @@ nav
 	img
 		margin: 0 auto
 
+#map-holder
+	height: 430px
+
+
 footer
 	background-color: $text-color
-	color: darken($head-hover, 20%)
+	color: #fff
 	padding-top: 15px
 	.logo
 		float: none
@@ -365,13 +368,16 @@ footer
 			font-weight: 500
 			font-size: 18px
 			line-height: 35px
-	hr
-		border-top: 1px solid darken($head-hover, 30%)
-		margin: 5px 0
+			color: #fff
+	
 	p
 		font-weight: 200
 	
 	.col-md-12 p
 		margin: 5px 0
+	.container-fluid:last-child
+		background-color: lighten($text-color,2%) 
+
+
 
 @import "media" // Всегда в конце
