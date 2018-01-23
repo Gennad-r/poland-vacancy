@@ -46,7 +46,7 @@ $(function() {
 
 
 	//scroll to
-	$('.navigation-menu a').bind('click', function(e) {
+	$('.navigation-menu a, #up-to-top').bind('click', function(e) {
 		e.preventDefault(); // prevent hard jump, the default behavior
 		// for mobile and hamburger menu
 		$(".hamburger--elastic").removeClass("is-active");
@@ -62,7 +62,27 @@ $(function() {
 
 		return false;
 	});
+
+	//to top
+	$(window).on("scroll", function () {
+		if ( window.scrollY >= window.innerHeight * 0.8 ) {
+				$('#up-to-top').addClass('s-scrolled');
+			} else {
+				$('#up-to-top').removeClass('s-scrolled');
+			}
+	});
+
+
+
 });
+
+
+
+
+
+
+
+
 function initMap() {
 	var blueStyle = [
 	{ "stylers": [ { "hue": "#052839" }, { "saturation": -20 } ] },
