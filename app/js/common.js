@@ -66,9 +66,9 @@ $(function() {
 	//to top
 	$(window).on("scroll", function () {
 		if ( window.scrollY >= window.innerHeight * 0.8 ) {
-				$('#up-to-top').addClass('s-scrolled');
+				$('#up-to-top, #call-me').addClass('s-scrolled');
 			} else {
-				$('#up-to-top').removeClass('s-scrolled');
+				$('#up-to-top, #call-me').removeClass('s-scrolled');
 			}
 	});
 
